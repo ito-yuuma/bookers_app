@@ -35,20 +35,20 @@
   <% end %>
 </table>
 <h2 class="books">New book</h2>
-<% if @book.errors.any? %>
+  <% if @book.errors.any? %>
   <%= @book.errors.count %> errors prohibited this book from being saved:
   <ul>
     <% @book.errors.full_messages.each do |message| %>
       <li><%= message %></li>
     <% end %>
   </ul>
-<% end %>
-<%= form_with model: @book, url: '/books', method: :post do |f| %>
+  <% end %>
+  <%= form_with model: @book, url: '/books', method: :post do |f| %>
   <p class="te">Title</p>
   <%= f.text_field :title %>
   <p class="te bd">Body</p>
   <%= f.text_area :body %>
 
   <%= f.submit 'Create Book', class:"submit" %>
-<% end %>
+  <% end %>
 </div>
