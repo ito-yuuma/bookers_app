@@ -1,22 +1,40 @@
+<div class="index">
 <table>
-  <h1>Books</h1>
-  <p>Title</p>
-  <p>Body</p>
+  <h1 class="book">Books</h1>
+  <div class="theme">
+    <div class="title">
+      <div class="titler">
+        <h4 class="th">Title</h4>
+      </div>
+    </div>
+    <div class="body">
+      <div class="bodyer">
+        <h4 class="th">Body</h4>
+      </div>
+    </div>
+    <div class="group"></div>
+  </div>
+
   <% @books.each do |book| %>
-    <span><%= book.title %></span>
-    <span><%= book.body %></span>
-    <span>
-      <%= link_to 'Show', book_path(book.id) %>
-    </span>
-    <span>
-      <%= link_to 'Edit', edit_book_path(book.id) %>
-    </span>
-    <span>
-      <%= link_to 'Destroy', book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %>
-    </span>
+  <div class="grouper">
+
+      <div class="title">
+        <span><%= book.title %></span>
+      </div>
+      <div class="body">
+        <span><%= book.body %></span>
+      </div>
+
+      <div class="group">
+          <%= link_to 'Show', book_path(book.id), class: "try show" %>
+          <%= link_to 'Edit', edit_book_path(book.id), class: "try edit" %>
+          <%= link_to 'Destroy', book_path(book.id), class: "try destroy", method: :delete, "data-confirm" => "Are you sure?" %>
+      </div>
+
+  </div>
   <% end %>
 </table>
-<h2>New book</h2>
+<h2 class="books">New book</h2>
 <% if @book.errors.any? %>
   <%= @book.errors.count %> errors prohibited this book from being saved:
   <ul>
@@ -26,10 +44,11 @@
   </ul>
 <% end %>
 <%= form_with model: @book, url: '/books', method: :post do |f| %>
-  <h4>Title</h4>
+  <p class="te">Title</p>
   <%= f.text_field :title %>
-  <h4>Body</h4>
+  <p class="te bd">Body</p>
   <%= f.text_area :body %>
 
-  <%= f.submit 'Create Book' %>
+  <%= f.submit 'Create Book', class:"submit" %>
 <% end %>
+</div>

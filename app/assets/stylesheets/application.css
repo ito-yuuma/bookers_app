@@ -13,5 +13,160 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.team, .grouper, .te, .bt{
+  font-family: arial;
+}
+
+strong, .book, .th, .books {
+  font-family:helvetica;
+}
+
+h2{
+  font-family:sans-serif;
+}
+
+
+h2 {
+  margin: 30px;
+}
+
+.book {
+  margin:20px 0;
+}
+
+.t {
+  margin: 0 auto 35px 60px;
+  font-size:80%;
+}
+
+.a1 {
+  color: #666;
+}
+
+.a1:hover {
+  background-color: black;
+  color: white;
+}
+
+.index {
+  margin:30px auto auto 30px;
+}
+.th {
+  display:inline-block;
+
+}
+
+
+.title {
+  width: 200px;
+  display:inline-block;
+
+}
+
+.body {
+  width: 400px;
+  display:inline-block;
+
+}
+
+.titler {
+  width:100%;
+  display:inline-block;
+  text-align: center;
+}
+
+.bodyer {
+  width:100%;
+  display:inline-block;
+  text-align: center;
+}
+
+.margin {
+  width: 15%;
+}
+
+.group {
+  width: 200px;
+  display:inline-block;
+}
+
+.try  {
+  font-size:13px;
+  color:black;
+  margin:0 2%;
+}
+
+.try:hover {
+  background-color: black;
+  color: white;
+}
+
+.grouper {
+  margin-top:5px;
+}
+
+.books {
+  margin:20px 0;
+}
+
+.te {
+  font-size:80%;
+}
+
+.submit {
+  margin:10px 0;
+  display:block;
+  width: 90px;
+}
+
+.bd {
+  margin-top:5px;
+}
+
+span {
+  font-size:13px;
+}
+
+.flash-message {
+  margin:30px 30px;
+}
+
+.flash-message.notice {
+  font-size:13px;
+  color:green;
+}
+
+.the {
+  display:inline-block;
+}
+
+.titles {
+  margin:30px 0 30px 30px;
+}
+.bodies {
+  display:block;
+  margin:30px 0 30px 30px;
+}
+
+.teamer, .urls {
+  font-size:13px;
+}
+
+.editer, .text, .booker {
+  display:inline-block;
+}
+.editer {
+  margin:0 2px 0 0px;
+}
+.booker {
+  margin:0 2px;
+}
+
 
 

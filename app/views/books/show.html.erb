@@ -1,6 +1,17 @@
-<p>Title:</p>
-<p><%= @book.title %></p>
-<p>Body:</p>
-<p><%= @book.body %></p>
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "Back", top_book_path(@book.id) %>
+<div class="index">
+ <div class="teamer">
+  <div class="titles">
+    <h4 class="th hello">Title:</h4>
+    <p class="the"><%= @book.title %></p>
+  </div>
+  <div class="bodies">
+    <h4 class="th hello">Body:</h4>
+    <p class="the"><%= @book.body %></p>
+  </div>
+ </div>
+ <div class="urls">
+    <%= link_to "Edit", edit_book_path(@book.id), class: "try editer"%>
+    <div class="text">|</div>
+    <%= link_to "Back", books_path(@book.id), class: "a1 booker"%>
+ </div>
+</div>
